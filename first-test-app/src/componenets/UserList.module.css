@@ -1,0 +1,9 @@
+
+.userGalery {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: auto auto auto auto;
+}
+

@@ -1,0 +1,26 @@
+.App {
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+.bottom{
+  
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.users-button{
+  margin-top: 50px;
+  width: 160px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+
+}
+
+.buttons{
+  width: 520px;
+  margin: 0 auto;
+}
