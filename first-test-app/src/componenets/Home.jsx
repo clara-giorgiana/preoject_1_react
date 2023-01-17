@@ -155,7 +155,7 @@ class Home extends Component {
         <br />
         <UserList users={this.state.users} showAll={true} onUserDeleted={(id) => this.deleteUser(id)}/>
 
-        <div class="bottom">
+        <div className="bottom">
         <br />
         <UserForm onUserCreated={(user) => this.addnewUser(user)} />
         <br />
