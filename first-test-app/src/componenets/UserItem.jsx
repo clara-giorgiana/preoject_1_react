@@ -18,12 +18,10 @@ class UserItem extends Component {
     
   }
 
-  handleDelete =  (e) => {
+  handleDelete =  (id) => {
 
-    console.log("detail: " + e);
-    console.log("detail: " + e.detail.valueOf());
-    //TODO: no working 
-    // this.props.onUserDeleted (e);
+    console.log("id: " + id);
+    this.props.onUserDeleted (id);
   
   }
 
@@ -35,7 +33,9 @@ class UserItem extends Component {
     <div className={styles['container']}> 
     <img src={image} className={styles['userImg']}/>
     <div className={styles['top-right']}>
-    <button onClick={(e) => { this.handleDelete(e)}} className={styles['button-del']}> <img src={DeleteImg} className={styles["img-button"]} /> {this.renderIcon({id})} </button>
+    <button onClick={() => this.handleDelete(id)} className={styles['button-del']}> <img src={DeleteImg} className={styles["img-button"]} /> 
+
+    </button>
       </div>
      <div className={styles['bottom-left']}>
         {firstname +" "+ lastname}
@@ -48,16 +48,6 @@ class UserItem extends Component {
   );
   }
 
-  renderIcon = (id2) => {
-    // var currentState = this.state.propState;
-    // var newState = currentState[0];
-    // // newState.id = id2;
-    // this.state.propState = [...currentState, newState]
-    // // this.setState ( [...currentState, newState]);
-    // console.log(this.state.propState.length);
-    console.log(id2);
-    
-  }
 }
 
 export default UserItem;
